@@ -3,26 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIM - Web Development, AI Automation & Mobile Apps</title>
+    <title>AIM - Web Development, AI Automation & Mobile App Solutions</title>
     <meta name="description" content="AIM delivers cutting-edge web development, AI automation, and mobile app solutions that transform businesses into industry leaders." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
     <link rel="canonical" href="https://aim-2.vercel.app/" />
+    <link rel="manifest" href="/manifest.json" />
 
-    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/logo.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-    <meta property="og:title" content="AIM - Web Development, AI Automation & Mobile Apps" />
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AIM - Web Development, AI Automation & Mobile App Solutions" />
     <meta property="og:description" content="AIM delivers cutting-edge web development, AI automation, and mobile app solutions that transform businesses into industry leaders." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://aim-2.vercel.app/logo.png" />
+    <meta property="og:image:alt" content="AIM - Web Development and AI Automation Solutions" />
     <meta property="og:url" content="https://aim-2.vercel.app/" />
+    <meta property="og:site_name" content="AIM" />
 
+    <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AIM - Web Development, AI Automation & Mobile Apps" />
+    <meta name="twitter:title" content="AIM - Web Development, AI Automation & Mobile App Solutions" />
     <meta name="twitter:description" content="AIM delivers cutting-edge web development, AI automation, and mobile app solutions that transform businesses into industry leaders." />
     <meta name="twitter:image" content="https://aim-2.vercel.app/logo.png" />
+    <meta name="twitter:image:alt" content="AIM - Web Development and AI Automation Solutions" />
 
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,6 +41,7 @@
       "name": "AIM",
       "url": "https://aim-2.vercel.app/",
       "description": "AIM delivers cutting-edge web development, AI automation, and mobile app solutions that transform businesses into industry leaders.",
+      "logo": "https://aim-2.vercel.app/logo.png",
       "image": "https://aim-2.vercel.app/logo.png",
       "sameAs": [
         "https://www.facebook.com/aim",
@@ -40,7 +52,24 @@
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "availableLanguage": "en"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
       }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AIM",
+      "description": "Web Development, AI Automation & Mobile App Solutions",
+      "url": "https://aim-2.vercel.app/",
+      "image": "https://aim-2.vercel.app/logo.png",
+      "priceRange": "$$",
+      "areaServed": "US"
     }
     </script>
 
@@ -50,8 +79,15 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', 'G-XXXXXXXXXX', {
+        'page_path': window.location.pathname
+      });
     </script>
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
   </head>
 
   <body>
