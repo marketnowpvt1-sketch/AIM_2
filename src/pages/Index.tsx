@@ -47,10 +47,19 @@ const Index = () => {
           <CursorGlow />
           <div className="relative z-10">
             <Navbar />
-            <HeroSection />
-            <ServicesSection />
-            <AboutSection />
-            <ContactSection />
+            <div id="home">
+              <h1 className="sr-only">AIM - Web Development, AI Automation & Mobile App Solutions</h1>
+              <HeroSection />
+            </div>
+            <div id="services">
+              <ServicesSection />
+            </div>
+            <div id="about">
+              <AboutSection />
+            </div>
+            <div id="contact">
+              <ContactSection />
+            </div>
             <Footer />
           </div>
         </motion.div>
