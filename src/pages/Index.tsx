@@ -52,12 +52,15 @@ const Index = () => {
               <HeroSection />
             </div>
             <div id="services">
+              <h2 className="sr-only">Our Services</h2>
               <ServicesSection />
             </div>
             <div id="about">
+              <h2 className="sr-only">About AIM</h2>
               <AboutSection />
             </div>
             <div id="contact">
+              <h2 className="sr-only">Contact Us</h2>
               <ContactSection />
             </div>
             <Footer />
